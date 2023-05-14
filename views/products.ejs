@@ -1,0 +1,31 @@
+<%include ./partials/header.ejs%>
+
+
+<h1 style="font-size: 2.5vw; margin-top: 2vw;">All products</h1>
+<div class="container d-flex">
+  <!-- <%%> -->
+
+  <div class="card" style="width: 18rem;">
+  <%data.forEach(function(det){%>
+    <div class="card-body">
+      <!-- <img style="width: 100px; height: 100px;" src="../images/productimages/<%=elem.image[0]%>" alt=""> -->
+      <p class="card-text"><%=det.des%></p>
+      <h2><%=det.price%></h2>
+      <a href="#" class="btn btn-primary">add to car</a>
+      <a href="#" class="btn btn-primary">wishlist</a>
+      <a href="/delete/<%=<details></details>._id%>">delete</a>
+      <a href="/product/edit/<%=<details></details>._id%>">edit</a>
+
+    </div>
+ <% })%>
+  </div>
+
+
+</div>
+ 
+</div>
+</div>
+
+
+
+<%include ./partials/footer.ejs%>
